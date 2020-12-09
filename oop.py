@@ -28,6 +28,9 @@ miles = JackRussellTerrier("mile", 4)
 print(miles.speak())
 
 
+class GoldenRetriever(Dog):
+    def speak(self, sound="bark"):
+        return super().speak(sound)
 
 
 class Car:
