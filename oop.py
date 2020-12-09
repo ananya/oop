@@ -1,5 +1,5 @@
 class Dog:
-    species = "pur"
+    species = "Canis familiaris"
     
     def __init__(self, name, age):
         self.name = name
@@ -13,6 +13,22 @@ class Dog:
 
 miles = Dog("mile", 4)
 print(miles)
+
+class JackRussellTerrier(Dog):
+    def speak(self, sound="Arf"):
+        return f"{self.name} says {sound}"
+
+class Dachshund(Dog):
+    pass
+
+class Bulldog(Dog):
+    pass
+
+miles = JackRussellTerrier("mile", 4)
+print(miles.speak())
+
+
+
 
 class Car:
 
