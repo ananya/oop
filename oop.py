@@ -21,10 +21,10 @@ class Car:
         self.mileage = mileage
 
     def __str__(self):
-        return f"The {self.color} car has {self.mileage} miles"
+        return f"The {self.color} car has {self.mileage:,} miles"
 
 car1 = Car("blue", 20_000)
 car2 = Car("red", 30_000)
 
-print(car1)
-print(car2)
+for car in (car1, car2):
+    print(car)
